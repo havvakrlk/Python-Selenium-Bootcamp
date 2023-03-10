@@ -1,0 +1,38 @@
+# ....1. soru.....
+# veri tipleri
+
+# string = metin türü veri tipidir. örnek;
+str1='havva'
+
+# integer = tamsayı veri tipidir. örnek;  
+b = 57
+
+# float = ondalıklı sayı veri tipidir. örnek;
+b = 57.2
+
+#complex = karmaşık sayıların oluşturduğu veri tipidir. örnek ;
+x = 3+4j
+
+#list = değişik verileri içinde tutmamıza yarar. örnek;
+liste =[1,2.5,2j]
+
+#tuple = değişmez bir veri türüdür. örnek ;
+a = ('python','havva')
+
+#bool = doğru veya yanlış değerleri saklamak için kullanılan veri tipidir. örnek;
+5==5
+True
+
+#.....2. soru.....
+
+# sitediki tüm metinler string tir. 
+#bitir ve devam et butonu bool veri tipi ile oluşturulmuştur.
+#sitedeki sayısal veriler için int, float kullanılmıştır.
+
+#.....3. soru....
+
+#  paylaşım yapılan alanın şartlı olduğunu söyleyebiliriz. mesela;
+if metin.kutucugu = True
+    print('gönder')
+else metin.kutucugu = False
+    print('lütfen metin kutucuğunu doldurunuz.')
