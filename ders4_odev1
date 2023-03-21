@@ -1,0 +1,47 @@
+Html nedir?
+İnternet sayfalarının görünümünü oluşturan temel kodlamadır. Hareketli metin işleme dili diye geçer. Basitce
+browser (tarayıcı) larda görebileceğimiz (internet exp., google crome gibi) internet dökümanları olusturmaya
+yarayan bir cesit dildir.
+
+Locators(Konum Belirleyici) Nedir?
+Tarayıcıyı açtık ve bir siteye girdik şimdi bu sitede neler yapabiliriz düşünelim. Belirli bir alana tıklayabilir, inputların veya text elemanlarının içerisini 
+doldurabiliriz. Locators(Konumlandırıcı), Selenium IDE’ye hangi web tabanlı objeler üzerinde çalışması gerektiğini söyleyen bir komuttur. Doğru elementin tanımlanması, 
+otomasyon oluşturmanın ön koşuludur. Site üzerindeki bir elemente örneğin giriş butonuna selenium ile tıklama işlemi yaptırmak istediğimizde bu işlemi locator’lar 
+aracılığıyla yaparız. Selenium ile geliştirmek istediğimiz test otomasyonlarında locator’ları kullanarak ilgili alanlara veri gönderebilir, tıklama işlemi yaptırabilir, 
+var olan içeriği temizleyebiliriz. Bunlar ‘By’ objesi olarak oluşturulur. En yaygın locator çeşitleri;
+
+ID
+Name
+ClassName
+TagName
+LinkText
+CssSelector
+XPath
+
+Selenium'da aksiyonlar:
+
+#driver = webdriver.Chrome(ChromeDriverManager().install())  selenium için chrome driverı indirmeliyiz.
+#driver.maximize_window() #tam ekran yapma
+#driver.get("https://www.google.com.tr/?hl=tr") Bir websitesini açmak istediğinizde get methodu kullanılır.
+
+#input = driver.find_element(By.NAME,"q") 
+
+Selenium, bir öğeyi benzersiz bir şekilde tanımlamak için bir dizi yerleşik konum belirleme stratejisi sunar . Konumlayıcıları 
+çok gelişmiş senaryolarda kullanmanın birçok yolu vardır.Bu şekilde bir html elemanı olsun, yani bir html elemanı name özniteliğine sahip olsun, bu değeri seçebilmek 
+için find_element_by_name()  methodunu kullanacağız.
+
+#firstResult = driver.find_element(By.XPATH,"")
+
+ Xpath en basit kullanımı ile en baştaki HTML elemanından, aramak istediğiniz yere kadar olan tüm yolları seçer.
+
+#listOfCourses = driver.find_elements(By.CLASS_NAME,"course-listing")
+
+Bu şekilde bir html elemanı olsun, yani bir html elemanı class özniteliğine sahip olsun, bu değeri seçebilmek için find_element_by_class_name() methodunu kullanacağız.
+
+#searchButton.click()
+
+Selenium'un click()komutu, herhangi bir etkileşimli UI öğesi (bağlantılar, düğmeler, onay kutuları, radyo düğmeleri) için bir fare tıklaması işlemini taklit eder. 
+Selenium kullanarak fare tıklamalarını simüle etmek, yalnızca çok önemli manuel test çabalarından tasarruf etmekle kalmaz, aynı zamanda uygulamanızdaki hataları 
+belirlemenize de yardımcı olur.
+
+
